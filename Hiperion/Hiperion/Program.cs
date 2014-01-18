@@ -22,6 +22,19 @@ namespace Hiperion
             d.Put(new SpecificMetadata2(1, 2, 3));
             SpecificMetadata1 n2 = d.Get<SpecificMetadata1>();
             SpecificMetadata2 n3 = d.Get<SpecificMetadata2>();
+
+
+            StorageService s = new StorageService();
+            s.Put("0", "pepito", d);
+            
+            var result = from n in s.Dates orderby n.date select n;
+            foreach (var e in result)
+            {
+                Console.WriteLine(e.date);
+            }             
+
+            s.Dispose();
+        
         }
 
         static void Main(string[] args)

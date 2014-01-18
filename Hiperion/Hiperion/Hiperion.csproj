@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PerstNetGenerics">
+      <HintPath>..\..\Perst422\bin\PerstNetGenerics.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,9 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
+    <Compile Include="PerstDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Storage.cs" />
+    <Compile Include="StorageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
