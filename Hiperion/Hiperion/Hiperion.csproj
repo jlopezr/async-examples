@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PerstNetGenerics">
-      <HintPath>..\..\Perst422\bin\PerstNetGenerics.dll</HintPath>
+      <HintPath>Lib\Perst\PerstNetGenerics.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Lib\Perst\PerstNetGenerics.dll" />
+    <Content Include="Lib\Perst\PerstNetGenerics.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
